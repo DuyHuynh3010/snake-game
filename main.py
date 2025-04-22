@@ -2,8 +2,6 @@ from turtle import Screen
 from score_board import Scoreboard
 import time
 
-import score_board
-
 from snake import Snake
 from food import Food
 
