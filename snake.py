@@ -50,3 +50,10 @@ class Snake:
     def right(self):
         if self.snake_head.heading() != 180:
             self.direction_queue.append(0)
+
+    def reset(self):
+        for seg in self.segments:
+            seg.goto(1000,1000)
+        self.segments.clear()
+        self.create_snake()
+        self.snake_head=self.segments[0]
